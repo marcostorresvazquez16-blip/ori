@@ -1,0 +1,261 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ori — Información con transparencia</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f7f7f2;
+      color: #17221f;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #183d32;
+      color: white;
+      padding: 20px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    .logo {
+      font-size: 32px;
+      font-weight: bold;
+      color: #b8f36b;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 18px;
+    }
+
+    .hero {
+      padding: 90px 8%;
+      background: #e9f5df;
+    }
+
+    .hero h1 {
+      font-size: clamp(38px, 6vw, 68px);
+      line-height: 1.1;
+      max-width: 800px;
+      margin: 20px 0;
+    }
+
+    .hero h1 span {
+      color: #497b3c;
+    }
+
+    .hero p {
+      max-width: 650px;
+      font-size: 19px;
+      color: #53615a;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 13px 22px;
+      background: #183d32;
+      color: white;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 65px 8%;
+    }
+
+    h2 {
+      font-size: 36px;
+      margin-bottom: 18px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .card {
+      background: white;
+      border: 1px solid #dfe5dc;
+      padding: 25px;
+      border-radius: 18px;
+    }
+
+    .card h3 {
+      color: #183d32;
+      margin-bottom: 10px;
+    }
+
+    .number {
+      font-size: 38px;
+      font-weight: bold;
+      color: #497b3c;
+    }
+
+    .green {
+      background: #183d32;
+      color: white;
+    }
+
+    .green h2,
+    .green h3 {
+      color: #b8f36b;
+    }
+
+    footer {
+      background: #101f1a;
+      color: white;
+      text-align: center;
+      padding: 30px 8%;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+      }
+
+      nav a {
+        margin: 5px;
+        display: inline-block;
+      }
+
+      .hero {
+        padding: 60px 8%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="logo">ori.</div>
+    <nav>
+      <a href="#problema">El problema</a>
+      <a href="#solucion">La solución</a>
+      <a href="#criterios">Criterios</a>
+      <a href="#modelo">Modelo</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p>INFORMACIÓN CON TRANSPARENCIA</p>
+      <h1>Antes de creer una noticia, <span>mira cómo se ha hecho.</span></h1>
+      <p>
+        Ori te ayuda a conocer las fuentes, la autoría y los cambios
+        de cada noticia para decidir si confiar y compartir.
+      </p>
+      <a class="btn" href="#solucion">Descubre Ori →</a>
+    </section>
+
+    <section id="problema">
+      <h2>El problema</h2>
+      <p>
+        La desinformación se mueve rápido. A los lectores les cuesta
+        distinguir una noticia rigurosa de otra dudosa y comprobar
+        sus fuentes requiere tiempo.
+      </p>
+
+      <div class="cards">
+        <article class="card">
+          <div class="number">31 %</div>
+          <h3>Confianza en las noticias</h3>
+          <p>Confía habitualmente en las noticias en España.</p>
+        </article>
+
+        <article class="card">
+          <div class="number">81 %</div>
+          <h3>Contraste manual</h3>
+          <p>Consulta otros medios cuando duda de una noticia.</p>
+        </article>
+
+        <article class="card">
+          <div class="number">73 %</div>
+          <h3>Acceso gratuito</h3>
+          <p>No pagaría por una herramienta de este tipo.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="solucion">
+      <h2>¿Qué propone Ori?</h2>
+      <p>
+        Ori analiza cada noticia y presenta un informe con sus fuentes,
+        la primera fuente identificada, la autoría y los cambios.
+        Utiliza inteligencia artificial con revisión humana en casos dudosos.
+      </p>
+
+      <div class="cards">
+        <article class="card">
+          <h3>01. Abre una noticia</h3>
+          <p>Lee una información en cualquier página web.</p>
+        </article>
+        <article class="card">
+          <h3>02. Consulta el informe</h3>
+          <p>Revisa el análisis y las fuentes disponibles.</p>
+        </article>
+        <article class="card">
+          <h3>03. Decide con información</h3>
+          <p>Valora las pruebas antes de compartir la noticia.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="criterios">
+      <h2>Los siete criterios</h2>
+      <div class="cards">
+        <article class="card"><h3>1. Fuentes</h3><p>Identifica de dónde sale cada dato.</p></article>
+        <article class="card"><h3>2. Enlaces originales</h3><p>Permite consultar los documentos citados.</p></article>
+        <article class="card"><h3>3. Autoría</h3><p>Comprueba quién firma la noticia.</p></article>
+        <article class="card"><h3>4. Trazabilidad</h3><p>Busca llegar a la primera fuente.</p></article>
+        <article class="card"><h3>5. Titular</h3><p>Compara el titular con el contenido.</p></article>
+        <article class="card"><h3>6. Actualizaciones</h3><p>Registra fechas y cambios.</p></article>
+        <article class="card"><h3>7. Rectificaciones</h3><p>Observa si los errores se corrigen a la vista.</p></article>
+      </div>
+    </section>
+
+    <section class="green" id="modelo">
+      <h2>El sello no se compra, se gana</h2>
+      <p>
+        Ori será gratuito para los lectores. En una fase posterior,
+        los medios podrán pagar por herramientas para revisar sus
+        noticias antes de publicarlas, pero nunca por conseguir
+        un veredicto favorable.
+      </p>
+    </section>
+
+    <section>
+      <h2>La hoja de ruta</h2>
+      <div class="cards">
+        <article class="card"><h3>Etapa 1</h3><p>Crear la extensión y la web.</p></article>
+        <article class="card"><h3>Etapa 2</h3><p>Darnos a conocer y colaborar con universidades.</p></article>
+        <article class="card"><h3>Etapa 3</h3><p>Buscar financiación independiente.</p></article>
+        <article class="card"><h3>Etapa 4</h3><p>Desarrollar herramientas para medios.</p></article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="logo">ori.</div>
+    <p>Grupo 9 · Diseño Periodístico · 2.º de Periodismo</p>
+    <p>Facultad de Comunicación · Universidad de Sevilla · 2026</p>
+  </footer>
+</body>
+</html>
